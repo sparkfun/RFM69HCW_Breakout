@@ -169,8 +169,6 @@
 <dimension x1="1.27" y1="1.27" x2="26.67" y2="1.27" x3="13.97" y3="-2.54" textsize="1.27" layer="51" unit="inch"/>
 <text x="19.05" y="2.54" size="1.27" layer="22" ratio="15" rot="MR0">(6.5" 164mm)</text>
 <text x="19.05" y="6.35" size="1.27" layer="22" ratio="15" rot="MR0">(3.1" 78mm)</text>
-<rectangle x1="19.05" y1="0.635" x2="20.32" y2="1.905" layer="22"/>
-<rectangle x1="11.43" y1="0.635" x2="12.7" y2="1.905" layer="22"/>
 </plain>
 <libraries>
 <library name="mike-temp">

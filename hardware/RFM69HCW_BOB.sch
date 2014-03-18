@@ -16429,7 +16429,7 @@ Standard decoupling cap</description>
 <sheet>
 <plain>
 <text x="172.72" y="7.62" size="2.54" layer="94">M Grusin</text>
-<text x="241.3" y="7.62" size="2.54" layer="94">01</text>
+<text x="241.3" y="7.62" size="2.54" layer="94">1.0</text>
 <text x="2.54" y="5.08" size="2.54" layer="94">Note: Mark board with frequency of installed module</text>
 <text x="167.64" y="83.82" size="2.54" layer="94">Antenna length (1/4 wave)
 
