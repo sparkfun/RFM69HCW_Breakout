@@ -1,6 +1,6 @@
 /****************************************************************************** <filename>
 RFM69HCW_Gateway
-Mike Grusin, SparkFun Electronics>
+Mike Grusin, SparkFun Electronics
 3/17/2014
 https://github.com/sparkfun/RFM69_Breakout
 
@@ -51,7 +51,7 @@ module. For 915MHz the wire should be 3.07"/78mm long. For 434MHz
 the wire should be 6.47"/164mm long.
 
 ANTENNA TIPS: When operating the board, you will achieve the best
-range if the wires on both ends are as vertical as possible. For
+range if the wires on both modules are as vertical as possible. For
 extra range, you can solder a second, equal length of wire to one
 of the adjacent ground pins, and point it in the opposite direction
 of the antenna (dipole). Try to keep the wire in open air without
@@ -105,7 +105,7 @@ void setup()
   // Set up status LED
 
   pinMode(LED,OUTPUT);
-  pinMode(GROUND,OUTPUT);
+  pinMode(GROUND,OUTPUT); // "ground" pin next to LED pin for convenience
   digitalWrite(GROUND,LOW);
   Blink(LED,100);
 
