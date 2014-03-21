@@ -42,7 +42,22 @@ MISO/'O'  D12                 ISP/MISO
 MOSI/'I'  D11                 ISP/MOSI
 SCK/'C'   D13                 ISP/SCK
 NSS/'S'   D10                 D10
-DIO0/'0'  D2                  D3
+DIO0/'0'  D2                  D3 (requires modifying the library)
+
+Note that you MUST attach an antenna to the board. This can be as
+simple as a piece of wire cut to a specific length and soldered to
+the ANT header. The length is dependent on the frequency of the 
+module. For 915MHz the wire should be 3.07"/78mm long. For 434MHz
+the wire should be 6.47"/164mm long.
+
+ANTENNA TIPS: When operating the board, you will achieve the best
+range if the wires on both ends are as vertical as possible. For
+extra range, you can solder a second, equal length of wire to one
+of the adjacent ground pins, and point it in the opposite direction
+of the antenna (dipole). Try to keep the wire in open air without
+any metal nearby. The radio signal will pass through plastic boxes,
+but don't try to operate the board + antenna within a metal box -
+it won't work.
 
 Versions:
 

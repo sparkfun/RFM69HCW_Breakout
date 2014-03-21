@@ -9,7 +9,7 @@ Product Versions
 
 [*RFM69HCW Breakout 433MHz (WRL-12823)*](https://www.sparkfun.com/products/12823)
 
-This is a breakout board for HopeRF's RFM69HCW wireless transceiver module. These modules operate in the [ISM band](http://en.wikipedia.org/wiki/ISM_band), which is reserved for short-range, low-power communications. Note that the 915MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 2 (Americas, Greenland, Pacific Islands), and the 433MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 1 (Europe, Africa, Middle East, Russia). Other regions have mixed allocations. Hobbyist use is not likely to be an issue, but if you're going to be deploying a lot of these, check your local regulations.
+This is a breakout board for HopeRF's RFM69HCW wireless transceiver module. These modules operate in the [ISM band](http://en.wikipedia.org/wiki/ISM_band), which is reserved for short-range, low-power communications. Note that the 915MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 2 (Americas, Greenland, Pacific Islands), and the 433MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 1 (Europe, Africa, Middle East, Russia). Other regions have mixed allocations. Hobbyist use is not likely to be an issue, but if you're going to be deploying a lot of these check your local regulations.
 
 Documentation
 -------------------
@@ -21,7 +21,7 @@ Repository Contents
 -------------------
 * **/software/Arduino/libraries** - Contains the [RFM69 library](https://github.com/LowPowerLab/RFM69) written by Felix Rusu of [LowPowerLab.com](lowpowerlab.com).
 
-* **/software/Arduino/RFM69HCW_examples** - Example Arduino sketches showing how to use the RFM69HCW breakout board.  Note that the examples included in the above library were written for the Low Power Lab [Moteino](http://lowpowerlab.com/moteino/) hardware and require modification to run on other Arduinos. The RFM69HCW_examples will run on most Arduinos without modification.
+* **/software/Arduino/RFM69HCW_examples** - Example Arduino sketches showing how to use the RFM69HCW breakout board. Read the comments in the sketch for wiring and power instructions. Note that the examples included with the above library were written for the Low Power Lab [Moteino](http://lowpowerlab.com/moteino/) hardware and require modification to run on other Arduinos. These RFM69HCW_examples will run on most Arduinos without modification.
 
 * **/hardware** - Eagle design files (.brd, .sch)
 
