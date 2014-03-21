@@ -148,7 +148,7 @@
 <wire x1="0" y1="6" x2="-4" y2="6" width="0.2032" layer="21"/>
 <text x="-9" y="9" size="1.27" layer="25">&gt;NAME</text>
 <text x="9" y="9" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
-<text x="-5.485" y="6.35" size="1.27" layer="21" ratio="12">1</text>
+<text x="-5.485" y="6.35" size="1.27" layer="21" ratio="15">1</text>
 <wire x1="2" y1="3" x2="2" y2="5" width="0.2032" layer="21"/>
 <wire x1="4" y1="5" x2="2" y2="5" width="0.2032" layer="21"/>
 <wire x1="4" y1="3" x2="4" y2="5" width="0.2032" layer="21"/>
@@ -831,39 +831,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$3" x="2.54" y="5.08" drill="1.1" diameter="1.9"/>
 <pad name="2" x="2.54" y="0" drill="1.1" diameter="1.9"/>
 </package>
-<package name="RFM69W-XXXS2">
-<wire x1="-9.85" y1="8" x2="9.85" y2="8" width="0.2032" layer="21"/>
-<wire x1="9.85" y1="8" x2="9.85" y2="-8" width="0.2032" layer="21"/>
-<wire x1="9.85" y1="-8" x2="-9.85" y2="-8" width="0.2032" layer="21"/>
-<wire x1="-9.85" y1="-8" x2="-9.85" y2="8" width="0.2032" layer="21"/>
-<smd name="4" x="-9.35" y="1" dx="3" dy="1.2" layer="1"/>
-<smd name="3" x="-9.35" y="3" dx="3" dy="1.2" layer="1"/>
-<smd name="2" x="-9.35" y="5" dx="3" dy="1.2" layer="1"/>
-<smd name="1" x="-9.35" y="7" dx="3" dy="1.2" layer="1"/>
-<smd name="5" x="-9.35" y="-1" dx="3" dy="1.2" layer="1"/>
-<smd name="6" x="-9.35" y="-3" dx="3" dy="1.2" layer="1"/>
-<smd name="7" x="-9.35" y="-5" dx="3" dy="1.2" layer="1"/>
-<smd name="8" x="-9.35" y="-7" dx="3" dy="1.2" layer="1"/>
-<smd name="9" x="9.35" y="-7" dx="3" dy="1.2" layer="1"/>
-<smd name="10" x="9.35" y="-5" dx="3" dy="1.2" layer="1"/>
-<smd name="11" x="9.35" y="-3" dx="3" dy="1.2" layer="1"/>
-<smd name="12" x="9.35" y="-1" dx="3" dy="1.2" layer="1"/>
-<smd name="13" x="9.35" y="1" dx="3" dy="1.2" layer="1"/>
-<smd name="14" x="9.35" y="3" dx="3" dy="1.2" layer="1"/>
-<smd name="15" x="9.35" y="5" dx="3" dy="1.2" layer="1"/>
-<smd name="16" x="9.35" y="7" dx="3" dy="1.2" layer="1"/>
-<wire x1="-5" y1="-1" x2="-5" y2="-6" width="0.2032" layer="21"/>
-<wire x1="-5" y1="-6" x2="0" y2="-6" width="0.2032" layer="21"/>
-<wire x1="0" y1="-6" x2="0" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0" y1="-1" x2="-5" y2="-1" width="0.2032" layer="21"/>
-<wire x1="-5" y1="7" x2="-5" y2="4" width="0.2032" layer="21"/>
-<wire x1="-5" y1="4" x2="5" y2="4" width="0.2032" layer="21"/>
-<wire x1="5" y1="4" x2="5" y2="7" width="0.2032" layer="21"/>
-<wire x1="5" y1="7" x2="-5" y2="7" width="0.2032" layer="21"/>
-<text x="-10" y="9" size="1.27" layer="25">&gt;NAME</text>
-<text x="10" y="9" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
-<text x="-6.985" y="6.35" size="1.27" layer="21" ratio="12">1</text>
-</package>
 <package name="1X05">
 <wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
@@ -1212,9 +1179,42 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <package name="1X01_AWG10_NS">
 <pad name="P$1" x="0" y="0" drill="2.8"/>
 </package>
+<package name="RFM69W-XXXS2">
+<wire x1="-9.85" y1="8" x2="9.85" y2="8" width="0.2032" layer="21"/>
+<wire x1="9.85" y1="8" x2="9.85" y2="-8" width="0.2032" layer="21"/>
+<wire x1="9.85" y1="-8" x2="-9.85" y2="-8" width="0.2032" layer="21"/>
+<wire x1="-9.85" y1="-8" x2="-9.85" y2="8" width="0.2032" layer="21"/>
+<smd name="4" x="-9.35" y="1" dx="3" dy="1.2" layer="1"/>
+<smd name="3" x="-9.35" y="3" dx="3" dy="1.2" layer="1"/>
+<smd name="2" x="-9.35" y="5" dx="3" dy="1.2" layer="1"/>
+<smd name="1" x="-9.35" y="7" dx="3" dy="1.2" layer="1"/>
+<smd name="5" x="-9.35" y="-1" dx="3" dy="1.2" layer="1"/>
+<smd name="6" x="-9.35" y="-3" dx="3" dy="1.2" layer="1"/>
+<smd name="7" x="-9.35" y="-5" dx="3" dy="1.2" layer="1"/>
+<smd name="8" x="-9.35" y="-7" dx="3" dy="1.2" layer="1"/>
+<smd name="9" x="9.35" y="-7" dx="3" dy="1.2" layer="1"/>
+<smd name="10" x="9.35" y="-5" dx="3" dy="1.2" layer="1"/>
+<smd name="11" x="9.35" y="-3" dx="3" dy="1.2" layer="1"/>
+<smd name="12" x="9.35" y="-1" dx="3" dy="1.2" layer="1"/>
+<smd name="13" x="9.35" y="1" dx="3" dy="1.2" layer="1"/>
+<smd name="14" x="9.35" y="3" dx="3" dy="1.2" layer="1"/>
+<smd name="15" x="9.35" y="5" dx="3" dy="1.2" layer="1"/>
+<smd name="16" x="9.35" y="7" dx="3" dy="1.2" layer="1"/>
+<wire x1="-5" y1="-1" x2="-5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-6" x2="0" y2="-6" width="0.2032" layer="21"/>
+<wire x1="0" y1="-6" x2="0" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0" y1="-1" x2="-5" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-5" y1="7" x2="-5" y2="4" width="0.2032" layer="21"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.2032" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="7" width="0.2032" layer="21"/>
+<wire x1="5" y1="7" x2="-5" y2="7" width="0.2032" layer="21"/>
+<text x="-10" y="9" size="1.27" layer="25">&gt;NAME</text>
+<text x="10" y="9" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
+<text x="-6.985" y="6.35" size="1.27" layer="21" ratio="15">1</text>
+</package>
 </packages>
 <symbols>
-<symbol name="RFM69">
+<symbol name="RFM69H">
 <pin name="RESET" x="-15.24" y="-10.16" length="middle" direction="in"/>
 <pin name="DIO0" x="15.24" y="12.7" length="middle" rot="R180"/>
 <pin name="DIO1" x="15.24" y="10.16" length="middle" rot="R180"/>
@@ -1295,7 +1295,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <devicesets>
 <deviceset name="RFM69H" prefix="U">
 <gates>
-<gate name="G$1" symbol="RFM69" x="0" y="-2.54"/>
+<gate name="G$1" symbol="RFM69H" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="CW" package="RFM69HCW-XXXS2">
@@ -1970,8 +1970,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51">http://creativecommons.org/licenses/by-sa/3.0</text>
+<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
 </package>
 <package name="SFE_LOGO_NAME_.1">
@@ -11641,8 +11641,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="1.524" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
 <text x="15.494" y="17.78" size="2.7432" layer="94" font="vector">&gt;DRAWING_NAME</text>
 <text x="2.54" y="31.75" size="1.9304" layer="94">Released under the Creative Commons</text>
-<text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 3.0 License</text>
-<text x="2.54" y="24.13" size="1.9304" layer="94">http://creativecommons.org/licenses/by-sa/3.0</text>
+<text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
+<text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
 </symbol>
 <symbol name="3.3V">
@@ -16429,7 +16429,7 @@ Standard decoupling cap</description>
 <sheet>
 <plain>
 <text x="172.72" y="7.62" size="2.54" layer="94">M Grusin</text>
-<text x="241.3" y="7.62" size="2.54" layer="94">1.0</text>
+<text x="238.76" y="7.62" size="2.54" layer="94">1.0</text>
 <text x="2.54" y="5.08" size="2.54" layer="94">Note: Mark board with frequency of installed module</text>
 <text x="167.64" y="83.82" size="2.54" layer="94">Antenna length (1/4 wave)
 
