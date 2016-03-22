@@ -105,16 +105,14 @@ RFM69 radio; // RFM69 library object
 
 // You can connect status LEDs to these Arduino pins:
 
-#define GOODLED       9  // Status LED + on pin 9 (ala Moteino)
-#define GOODGROUND    8  // Adjacent "ground" (digital low) pin for LED-
+#define GOODLED       A0  // Status LED + on pin 9 (ala Moteino)
 
-#define BADLED        7  // Status LED + on pin 7
-#define BADGROUND     6  // Adjacent "ground" (digital low) pin for LED-
+#define BADLED        A1  // Status LED + on pin 7
 
 #define TIMEOUT 1000 // time delay between sends
 unsigned long nexttime;
 
-byte sendbuffer[MAX_DATA_LEN];
+byte sendbuffer[RF69_MAX_DATA_LEN];
 
 void setup()
 {
@@ -124,13 +122,9 @@ void setup()
   
   pinMode(GOODLED,OUTPUT);
   digitalWrite(GOODLED,LOW);
-  pinMode(GOODGROUND,OUTPUT); // "Ground" pin next to LED pin for convenience
-  digitalWrite(GOODGROUND,LOW);
 
   pinMode(BADLED,OUTPUT);
   digitalWrite(BADLED,LOW);
-  pinMode(BADGROUND,OUTPUT); // "Ground" pin next to LED pin for convenience
-  digitalWrite(BADGROUND,LOW);
 
   // Set up serial port (to terminal, not to radio)
   
@@ -139,8 +133,8 @@ void setup()
   
   // Wait for radio to power up
   
-  Blink(GOODLED,100); // You could also use delay(100); 
-  Blink(BADLED,100); // You could also use delay(100); 
+//  Blink(GOODLED,100); // You could also use delay(100);
+//  Blink(BADLED,100); // You could also use delay(100); 
   
   // Initialize radio module
   
@@ -163,7 +157,8 @@ void setup()
   Serial.println("RFM69 initialized!");
   Serial.print("Frequency: ");
   Serial.print(FREQUENCY==RF69_433MHZ ? 433 : FREQUENCY==RF69_868MHZ ? 868 : 915);
-  Serial.println("MHz");
+  Serial.print("MHz ");
+  Serial.println(radio.getFrequency());
   Serial.print("Network: ");
   Serial.println(MYNETWORK);
   Serial.print("My node: ");
@@ -176,7 +171,7 @@ void setup()
 
   // Build max-size test packet out of printable ASCII
   
-  for (x=0; x<MAX_DATA_LEN; x++)
+  for (x=0; x<RF69_MAX_DATA_LEN; x++)
   {
     sendbuffer[x] = x + '0';
   }
@@ -185,13 +180,26 @@ void setup()
 void loop()
 {
   boolean received;
+  static int n = 0;
+  
+  n++;
   
   // Send test packet
   
-  Serial.print("Sending message to node: ");
-  Serial.println(TONODE);
+//  Serial.print("Sending message to node: ");
+//  Serial.println(TONODE);
   
-  radio.send(TONODE, sendbuffer, MAX_DATA_LEN, false);
+//  radio.send(TONODE, sendbuffer, RF69_MAX_DATA_LEN, false);
+
+//  Serial.println((char*)sendbuffer);
+  
+  if (radio.sendWithRetry(TONODE, sendbuffer, RF69_MAX_DATA_LEN,3,50))
+    Serial.println("Send acknowledged");
+  else
+  {
+    Serial.println("NO ACKNOWLEDGE");
+    Blink(BADLED,100);
+  }
 
   nexttime = millis() + TIMEOUT;
   received = false;
@@ -202,14 +210,22 @@ void loop()
 
     if (radio.receiveDone())
     {
+//      if (radio.ACKRequested())
+//        radio.sendACK();
+
       Serial.print("Received message from node: ");
       Serial.print(radio.SENDERID, DEC);
       Serial.print(" RSSI: ");
       Serial.print(radio.RSSI);
+      Serial.print(" length: ");
+      Serial.print(radio.DATALEN);
 
       // Compare received message to sent message
       
-      if (memcmp((void *)radio.DATA,(void *)sendbuffer,MAX_DATA_LEN) == 0)
+      Serial.println((char*)radio.DATA);
+
+      
+      if (memcmp((void *)radio.DATA,(void *)sendbuffer,RF69_MAX_DATA_LEN) == 0)
       {
         Serial.println(" messages match!");
         Blink(GOODLED,100);

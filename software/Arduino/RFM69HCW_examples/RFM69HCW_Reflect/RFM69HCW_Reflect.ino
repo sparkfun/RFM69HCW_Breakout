@@ -179,22 +179,29 @@ void setup()
 
 void loop()
 {
-  char i;
+  unsigned char from;
   static unsigned long nexttime = 0;
 
   // If we receive a packet, send it back to the source
   
   if (radio.receiveDone())
   {
+    from = radio.SENDERID;
+    
+    if (radio.ACKRequested())
+      radio.sendACK();
+
     Serial.print("Received message from node: ");
-    Serial.print(radio.SENDERID, DEC);
+    Serial.print(from);
     Serial.print(" RSSI: ");
     Serial.println(radio.RSSI);
+    Serial.println((char*)radio.DATA);
 
-    Serial.print("Sending message to node: ");
-    Serial.println(radio.SENDERID);
+    Serial.print("Sending same message back to node: ");
+    Serial.println(from);
     
-    radio.send(radio.SENDERID, (void*)radio.DATA, radio.DATALEN, false);
+    radio.send(from, (void*)radio.DATA, radio.DATALEN,false);
+
     Blink(LED,100);
   }
 }
