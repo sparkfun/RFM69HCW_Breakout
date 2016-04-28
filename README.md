@@ -17,21 +17,17 @@ Documentation
 
 Repository Contents
 -------------------
-* [**/software/Arduino/libraries**](https://github.com/sparkfun/RFM69HCW_Breakout/tree/master/software/Arduino/libraries) - Contains the [RFM69 library](https://github.com/LowPowerLab/RFM69) written by Felix Rusu of [LowPowerLab.com](lowpowerlab.com).
+* [**/Libraries/Arduino**](https://github.com/sparkfun/RFM69HCW_Breakout/tree/master/Libraries/Arduino) - Contains the [RFM69 library](https://github.com/LowPowerLab/RFM69) written by Felix Rusu of [LowPowerLab.com](lowpowerlab.com). See [https://github.com/LowPowerLab/RFM69](https://github.com/LowPowerLab/RFM69) for the most up-to-date version.
 
-* [**/software/Arduino/RFM69HCW_examples**](https://github.com/sparkfun/RFM69HCW_Breakout/tree/master/software/Arduino/RFM69HCW_examples) - Example Arduino sketches showing how to use the RFM69HCW breakout board. Read the comments in the sketch for wiring and power instructions. Note that the examples included with the above library were written for the Low Power Lab [Moteino](http://lowpowerlab.com/moteino/) hardware and require modification to run on other Arduinos. These RFM69HCW_examples will run on most Arduinos without modification.
+* [**/Libraries/Arduino/RFM69/examples**](https://github.com/sparkfun/RFM69HCW_Breakout/tree/master/Libraries/Arduino/RFM69/examples) - Example Arduino sketch showing how to use the RFM69HCW breakout board. See the hook-up guide at [https://learn.sparkfun.com/tutorials/rfm69hcw-hookup-guide](https://learn.sparkfun.com/tutorials/rfm69hcw-hookup-guide) for wiring and usage details.
 
 * [**/hardware**](https://github.com/sparkfun/RFM69HCW_Breakout/tree/master/hardware) - Eagle design files (.brd, .sch, .pdf)
 
 * [**/documentation**](https://github.com/sparkfun/RFM69HCW_Breakout/tree/master/documentation) - Datasheets, etc.
 
-Version History
----------------
-* **V1.0** Initial release 3/21/14 MDG
-
 Attribution
 -----------
-Felix Rusu of [LowPowerLab.com](lowpowerlab.com) has written a great [RFM69 library](https://github.com/LowPowerLab/RFM69) for his Moteino project; we gratefully acknowledge his work. A working version is included here for convenience, see his [GitHub repository](https://github.com/LowPowerLab/RFM69) for the latest version.
+We gratefully acknowledge Felix Rusu of [LowPowerLab.com](lowpowerlab.com) for his terrific [RFM69 library](https://github.com/LowPowerLab/RFM69) and his very cool [Moteino](http://lowpowerlab.com/blog/category/moteino/) hardware. A version of his library is included here for the convenience of SparkFun customers. Please see his [GitHub repository](https://github.com/LowPowerLab/RFM69) for the latest version.
 
 License Information
 -------------------
