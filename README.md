@@ -3,15 +3,35 @@ RFM69HCW Breakout Board
 
 [![alt text](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)
 
+This is a breakout board for HopeRF's RFM69HCW wireless transceiver module. These modules operate in the [ISM band](http://en.wikipedia.org/wiki/ISM_band), which is reserved for short-range, low-power communications. 
+
+Specs
+----------------
+
+*Transmit power: -18dBm (0.016mW) to +20dBm (100mW) in 1dBm steps
+*Receive sensitivity: down to -120dBm at 1.2kbps
+*Modulation types: FSK GFSK MSK GMSK OOK
+*Bit rates (FSK): 1.2kbps to 300kbps
+*Voltage range: 1.8V to 3.6V
+*Current consumption: 0.1uA sleep, 1.25mA standby, 16mA receive, *130mA transmit (max)
+*Encryption: AES 128-bit (optional)
+*Packet buffer (FIFO): 66 bytes
+*Dimensions: 0.8" x 1.1"
+
 Product Versions
 ----------------
+
+SparkFun's RFM69HCW Breakout Board comes in two frequencies.
+
 * [**RFM69HCW Breakout 915MHz (WRL-12775)**](https://www.sparkfun.com/products/12775)
 * [**RFM69HCW Breakout 433MHz (WRL-12823)**](https://www.sparkfun.com/products/12823)
 
-This is a breakout board for HopeRF's RFM69HCW wireless transceiver module. These modules operate in the [ISM band](http://en.wikipedia.org/wiki/ISM_band), which is reserved for short-range, low-power communications. Broadly speaking, the 915MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 2 (North and South America, Australia, Greenland, Pacific Islands, Israel), and the 433MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 1 (Europe, Africa, Middle East, Russia). Other areas have mixed allocations; hobbyist use is not likely to be an issue, but if you're going to be deploying a lot of these or using them in a commercial product, check your local regulations.
+Broadly speaking, the 915MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 2 (North and South America, Australia, Greenland, Pacific Islands, Israel), and the 433MHz version is legal in [ITU region](http://en.wikipedia.org/wiki/ITU_region) 1 (Europe, Africa, Middle East, Russia). Other areas have mixed allocations; hobbyist use is not likely to be an issue, but if you're going to be deploying a lot of these or using them in a commercial product, check your local regulations.
 
 Documentation
 -------------------
+
+* [**Hookup Guide**](https://learn.sparkfun.com/tutorials/rfm69hcw-hookup-guide)
 * [**RFM69HCW Breakout Board Schematic**](https://github.com/sparkfun/RFM69HCW_Breakout/blob/master/documentation/RFM69HCW_BOB.pdf)
 * [**RFM69HCW datasheet**](https://github.com/sparkfun/RFM69HCW_Breakout/blob/master/documentation/RFM69HCW-V1.1.pdf)
 * [**HopeRF RFM69HCW product page (external link)**](http://www.hoperf.com/rf/fsk_module/RFM69HCW.htm)
@@ -28,7 +48,7 @@ Repository Contents
 
 Attribution
 -----------
-We gratefully acknowledge Felix Rusu of [LowPowerLab.com](lowpowerlab.com) for his terrific [RFM69 library](https://github.com/LowPowerLab/RFM69) which runs on his very cool [Moteino](http://lowpowerlab.com/moteino/) hardware. A version of his library is included here for the convenience of SparkFun customers. Please see his [GitHub repository](https://github.com/LowPowerLab/RFM69) for the latest version.
+We gratefully acknowledge Felix Rusu of [LowPowerLab.com](lowpowerlab.com) for his terrific [RFM69 library](https://github.com/LowPowerLab/RFM69), which runs on his very cool [Moteino](http://lowpowerlab.com/moteino/) hardware. A version of his library is included here for the convenience of SparkFun customers. Please see his [GitHub repository](https://github.com/LowPowerLab/RFM69) for the latest version.
 
 License Information
 -------------------
