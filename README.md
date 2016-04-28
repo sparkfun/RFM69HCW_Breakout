@@ -1,7 +1,7 @@
 RFM69HCW Breakout Board
 =================
 
-Picture
+-> [![alt text](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg) <-
 
 Product Versions
 ----------------
