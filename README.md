@@ -7,15 +7,16 @@ The RFM69HCW is an inexpensive and versatile radio module that operates in the u
 Specs
 ----------------
 
-*Transmit power: -18dBm (0.016mW) to +20dBm (100mW) in 1dBm steps
-*Receive sensitivity: down to -120dBm at 1.2kbps
-*Modulation types: FSK GFSK MSK GMSK OOK
-*Bit rates (FSK): 1.2kbps to 300kbps
-*Voltage range: 1.8V to 3.6V
-*Current consumption: 0.1uA sleep, 1.25mA standby, 16mA receive, *130mA transmit (max)
-*Encryption: AES 128-bit (optional)
-*Packet buffer (FIFO): 66 bytes
-*Dimensions: 0.8" x 1.1"
+* Transmit power: -18dBm (0.016mW) to +20dBm (100mW) in 1dBm steps
+* Receive sensitivity: down to -120dBm at 1.2kbps
+* Modulation types: FSK GFSK MSK GMSK OOK
+* Bit rates (FSK): 1.2kbps to 300kbps
+* Voltage range: 1.8V to 3.6V
+* Current consumption: 0.1uA sleep, 1.25mA standby, 16mA receive, 
+* 130mA transmit (max)
+* Encryption: AES 128-bit (optional)
+* Packet buffer (FIFO): 66 bytes
+* Dimensions: 0.8" x 1.1"
 
 Product Versions
 ----------------
