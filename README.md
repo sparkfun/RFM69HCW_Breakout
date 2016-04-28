@@ -1,5 +1,6 @@
 RFM69HCW Breakout Board
 =================
+The RFM69HCW is an inexpensive and versatile radio module that operates in the unlicensed ISM (Industry, Science, and Medicine) radio band. It's perfect for building inexpensive short-range wireless networks of sensors and actuators for home automation, citizen science, and more.
 
 [![alt text](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)
 
@@ -21,7 +22,7 @@ Specs
 Product Versions
 ----------------
 
-SparkFun's RFM69HCW Breakout Board comes in two frequencies.
+The RFM69HCW modules transmit in the [ISM band](http://en.wikipedia.org/wiki/ISM_band), which is reserved for short-range, low-power communications. SparkFun sells the RFM69HCW Breakout Board in two frequencies:
 
 * [**RFM69HCW Breakout 915MHz (WRL-12775)**](https://www.sparkfun.com/products/12775)
 * [**RFM69HCW Breakout 433MHz (WRL-12823)**](https://www.sparkfun.com/products/12823)
