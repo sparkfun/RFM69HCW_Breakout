@@ -4,8 +4,6 @@ The RFM69HCW is an inexpensive and versatile radio module that operates in the u
 
 [![alt text](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)](https://cdn.sparkfun.com/assets/parts/9/6/6/5/12823-00.jpg)
 
-This is a breakout board for HopeRF's RFM69HCW wireless transceiver module. These modules operate in the [ISM band](http://en.wikipedia.org/wiki/ISM_band), which is reserved for short-range, low-power communications. 
-
 Specs
 ----------------
 
